@@ -1,14 +1,22 @@
 package com.uniquehire.rolemanagement.dto.request;
 
-import jakarta.validation.constraints.NotBlank;
-import lombok.Data;
+import com.uniquehire.rolemanagement.enums.Status;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class RoleRequest {
 
-    @NotBlank(message = "Role name is required")
     private String roleName;
 
     private String description;
 
+    private Status status;
+
+    private String createdBy;
+
+    private String updatedBy;
 }
