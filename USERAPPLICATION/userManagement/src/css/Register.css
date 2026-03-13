@@ -1,0 +1,86 @@
+body{
+  background:#f4f6f9;
+  font-family:Arial;
+}
+
+.register-container{
+  display:flex;
+  justify-content:center;
+  margin-top:60px;
+}
+.register-card{
+  background:white;
+  padding:40px;
+  width:750px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.register-card h2{
+    font-size: 45px;
+    margin-bottom:5px;
+    color:#7b21c8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.register-card p{
+  padding-top: 10px;
+  color:#6b2c96;
+  font-size: 17px;
+  margin-bottom:25px;
+}
+.row{
+  display:flex;
+  gap:20px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:20px;
+  flex:1;
+}
+
+.field label{
+  margin-bottom:6px;
+  font-weight:500;
+}
+
+.field input,
+.field textarea{
+  padding:12px;
+  border:1px solid #dcdcdc;
+  border-radius:8px;
+  outline:none;
+  font-size:14px;
+}
+
+.field textarea{
+  resize:none;
+  height:80px;
+}
+.buttons{
+  display:flex;
+  justify-content:space-between;
+  margin-top:25px;
+}
+
+.cancel{
+  padding:12px 40px;
+  border:none;
+  border-radius:10px;
+  background:#f6dada;
+  color:#c20000;
+  font-weight:500;
+  cursor:pointer;
+}
+
+.save{
+  padding:12px 40px;
+  border:none;
+  border-radius:10px;
+  background:#09a63e;
+  color:white;
+  font-weight:500;
+  cursor:pointer;
+}
