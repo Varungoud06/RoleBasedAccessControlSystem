@@ -21,4 +21,9 @@ public class UserResponseDTO {
     private Boolean status;
 
     private LocalDateTime createdAt;
+    private Long roleId;
+    private String roleName;
+
+    private Long organizationId;
+    private String organizationName;
 }

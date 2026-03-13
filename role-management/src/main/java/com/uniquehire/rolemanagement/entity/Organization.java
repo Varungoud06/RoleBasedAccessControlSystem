@@ -1,5 +1,5 @@
 package com.uniquehire.rolemanagement.entity;
-import jakarta.persistence.*;
+
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
@@ -29,7 +29,11 @@ public class Organization {
     @Column(nullable = false, unique = true)
     private String code;
 
+
     @OneToMany(mappedBy = "organization", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private List<Department> departments;
+
+    @OneToOne(mappedBy = "organization", fetch = FetchType.LAZY)
+    private User user;
 }
