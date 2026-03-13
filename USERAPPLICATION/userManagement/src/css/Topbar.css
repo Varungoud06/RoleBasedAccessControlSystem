@@ -1,0 +1,70 @@
+.topbar {
+  height: 70px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6eef5;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.topbar-notification,
+.topbar-user {
+  position: relative;
+  cursor: pointer;
+}
+
+/* notification dot */
+
+.notification-dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* notification panel */
+
+.notification-panel {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 280px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  padding: 14px;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* profile panel */
+
+.profile-panel {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 200px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  padding: 16px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

@@ -1,0 +1,208 @@
+.training-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.training-main {
+  flex: 1;
+}
+
+.training-content {
+  padding: 30px;
+}
+
+.training-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.training-search {
+  width: 560px;
+  height: 56px;
+  border: 1.5px solid #ead7f6;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  color: #b05cff;
+}
+
+.training-search input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+}
+
+.training-add-btn {
+  height: 56px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #7922ff 0%, #9c14ff 100%);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.training-table-wrap {
+  background: white;
+  border-radius: 24px;
+  overflow-x: auto;
+  box-shadow: 0 6px 18px rgba(70, 41, 91, 0.1);
+  border: 1px solid #dfeff5;
+}
+
+.training-table {
+  width: 100%;
+  min-width: 1400px;
+  border-collapse: collapse;
+}
+
+.training-table th {
+  text-align: left;
+  padding: 24px 20px;
+  color: #5f2396;
+  font-size: 16px;
+  background: #eefbff;
+}
+
+.training-table td {
+  padding: 22px 20px;
+  color: #7c21cb;
+  font-size: 16px;
+  border-top: 1px solid #e3edf1;
+}
+
+.training-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.edit-icon {
+  color: #00a4e8;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #ff1f1f;
+  cursor: pointer;
+}
+
+.no-data {
+  text-align: center;
+  padding: 30px;
+  color: #7c21cb;
+  font-weight: 600;
+}
+
+/* modal */
+
+.training-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.training-modal {
+  width: 900px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.training-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 28px;
+  border-bottom: 1px solid #e6eef5;
+}
+
+.training-modal-header h2 {
+  color: #2466d8;
+  font-size: 28px;
+  margin: 0;
+}
+
+.close-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.training-form {
+  padding: 28px;
+}
+
+.training-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.training-form-grid div {
+  display: flex;
+  flex-direction: column;
+}
+
+.training-form-grid label {
+  font-size: 18px;
+  color: #5f2396;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.training-form-grid input,
+.training-form-grid select {
+  border: 1.5px solid #dbe9f2;
+  border-radius: 12px;
+  padding: 12px 14px;
+  height: 50px;
+  font-size: 16px;
+  outline: none;
+}
+
+.training-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.cancel-btn,
+.save-btn {
+  height: 50px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #ececec;
+  color: #555;
+}
+
+.save-btn {
+  background: linear-gradient(90deg, #0aa3d9 0%, #2666ff 100%);
+  color: white;
+}
